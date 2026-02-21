@@ -1,0 +1,82 @@
+/* TERMINAL MODE */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    background: #000;
+    font-family: 'Courier New', monospace;
+    color: #00ffcc;
+}
+
+/* Container full layar */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Chat area */
+#chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+/* Message */
+.message-wrapper {
+    margin: 4px 0;
+}
+
+.message {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    color: #00ffcc;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    border-top: 1px solid #00ffcc;
+    padding: 8px;
+    background: #000;
+}
+
+#user-input {
+    flex: 1;
+    background: black;
+    border: none;
+    outline: none;
+    color: #00ffcc;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#send-btn {
+    background: black;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background: #00ffcc;
+    color: black;
+}
+
+/* Scrollbar tipis neon */
+#chat-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background: #00ffcc;
+}
